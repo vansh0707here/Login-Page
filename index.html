@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vansh | Course Portal Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Vansh Course Portal</h1>
+        </header>
+
+        <!-- Authentication Section -->
+        <section id="auth">
+            <div class="card">
+                <h2>Create Account</h2>
+                <form id="register-form">
+                    <input type="text" id="regUsername" placeholder="Username" required />
+                    <input type="password" id="regPassword" placeholder="Password" required />
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="text" id="loginUsername" placeholder="Username" required />
+                    <input type="password" id="loginPassword" placeholder="Password" required />
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Secured Page -->
+        <section id="secure" class="hidden">
+            <h2>Welcome, <span id="user-label"></span>!</h2>
+            <p>You are now logged in. Enjoy the premium content 🚀</p>
+            <button id="logout">Logout</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
